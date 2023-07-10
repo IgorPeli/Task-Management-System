@@ -52,7 +52,7 @@ The Task Management System aims to help users stay organized and manage their ta
 - image foder: This folder contains the images.
 
   ## Explaining the project and the database
-    **users**: This table stores user information, including their ID, username, and hashed password.
-    **tasks**: This table stores task information, including the task ID, user ID, title, description, and status.
+    **users**: This table stores user information, including their ID, username, and hashed password.  
+    **tasks**: This table stores task information, including the task ID, user ID, title, description, and status.  
 
     The project utilizes the Flask web framework and Flask-SQLAlchemy extension to manage the database connections and interactione
