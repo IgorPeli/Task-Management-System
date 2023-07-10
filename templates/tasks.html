@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager - Tasks</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <h2>Tasks</h2>
+        <ul>
+            {% for task in tasks %}
+            <li>
+                <strong>{{ task[2] }}</strong><br>
+                {{ task[3] }}
+                <a href="/edit/{{ task[0] }}">Edit</a>
+                <a href="/delete/{{ task[0] }}">Delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/create">Create New Task</a>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>

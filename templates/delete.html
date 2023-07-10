@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager - Delete Task</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Task</h1>
+        <p>Are you sure you want to delete the following task?</p>
+        <p>Title: {{ task[2] }}</p>
+        <p>Description: {{ task[3] }}</p>
+        <form method="POST" action="/delete/{{ task[0] }}">
+            <button type="submit">Delete</button>
+        </form>
+        <a href="/">Cancel</a>
+    </div>
+</body>
+</html>

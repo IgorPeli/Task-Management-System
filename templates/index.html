@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Task Manager - My Tasks
+{% endblock %}
+
+{% block content %}
+    <h1>My Tasks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task[1] }}</td>
+                    <td>{{ task[2] }}</td>
+                    <td>{{ task[3] }}</td>
+                    <td>
+                       <!-- Exemplo para o link de edição -->
+<a href="/edit/{{ task.id }}">Editar</a>
+
+<!-- Exemplo para o link de exclusão -->
+<a href="/delete/{{ task.id }}">Excluir</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/create">Create New Task</a>
+    <a href="/logout">Logout</a>
+{% endblock %}

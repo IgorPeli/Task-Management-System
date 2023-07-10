@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager - Edit Task</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Task</h1>
+        <form method="POST" action="/edit/{{ task[0] }}">
+            <input type="text" name="title" placeholder="Title" value="{{ task[2] }}" required>
+            <textarea name="description" placeholder="Description">{{ task[3] }}</textarea>
+            <select name="status">
+                <option value="0" {% if task[4] == 0 %}selected{% endif %}>Not Started</option>
+                <option value="1" {% if task[4] == 1 %}selected{% endif %}>In Progress</option>
+                <option value="2" {% if task[4] == 2 %}selected{% endif %}>Completed</option>
+            </select>
+            <button type="submit">Save</button>
+        </form>
+        <a href="/">Back to Tasks</a>
+    </div>
+</body>
+</html>
