@@ -40,14 +40,14 @@ The Task Management System aims to help users stay organized and manage their ta
 ### File Structure and Description
 - **app.py**: This file contains the main Flask application code. It handles the routing and logic for user registration, login, task creation, viewing, updating, and deletion.
 - **templates folder**: This folder contains the HTML templates used for rendering the different pages of the application.
- - **index.html**: The template for the homepage, where users can view their tasks.
- - **login.html**: The template for the login page.
- - **register.html**: The template for the user registration page.
- - **create_task.html**: The template for creating a new task.
- - **edit_task.html**: The template for editing an existing task.
- - **delete.html**: The template for confirming the deletion of a task.
+    - **index.html**: The template for the homepage, where users can view their tasks.
+    - **login.html**: The template for the login page.
+    - **register.html**: The template for the user registration page.
+    - **create_task.html**: The template for creating a new task.
+    - **edit_task.html**: The template for editing an existing task.
+    - **delete.html**: The template for confirming the deletion of a task.
 - **static folder**: This folder contains static files used in the application, such as CSS stylesheets and images.
- - **style.css**: The CSS file that defines the styles for the HTML templates.
+    - **style.css**: The CSS file that defines the styles for the HTML templates.
 - **task_manager.db**: The SQLite database file that stores the user accounts and task data.
 - **image foder**: This folder contains the images.
 
